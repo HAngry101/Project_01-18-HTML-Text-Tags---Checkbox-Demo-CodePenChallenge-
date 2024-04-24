@@ -42,7 +42,7 @@ label {
 }
 
 input {
-    -webkit-appearance: none;
+    -webkit-appearance:none;
     -moz-appearance: none;
     appearance: none;
     width: 19px;
@@ -51,7 +51,7 @@ input {
     background: #E0E0E0;
 }
 
-input[type=checkbox] :checked:before {
+input[type=checkbox]:checked:before {
     content: "✔";
     position: absolute;
     top: -3px;
@@ -61,10 +61,10 @@ input[type=checkbox] :checked:before {
     color: white;
 }
 
-input[type=checkbox] :checked {
+input[type=checkbox]:checked {
     background: #E53935;
 }
 
-input[type=checkbox] :focus {
+input[type=checkbox]:focus {
     outline: none;
 }
