@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700|Montserrat");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body {
+    padding: 50px;
+    background: #1d1f20;
+    color: #cfd8dc;
+    line-height: 1.4;
+}
+
+p {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 35px;
+    font-size: 31px;
+}
+
+#console, label {
+    font-family: "Inconsolata", monospace;
+}
+
+#console {
+    background: none;
+    border: 0;
+    resize: none;
+    height: 80px;
+    font-size: 22px;
+    color: #cfd8dc;
+    width: 100%;
+    font-size: 22px;
+}
+
+label {
+    width: calc(100%/3 - 3.5px);
+    display: inline-block;
+    font-size: 26px;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 19px;
+    height: 19px;
+    margin: 0 10px -1px 12px;
+    background: #E0E0E0;
+}
+
+input[type=checkbox] :checked:before {
+    content: "✔";
+    position: absolute;
+    top: -3px;
+    left: 2px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+}
+
+input[type=checkbox] :checked {
+    background: #E53935;
+}
+
+input[type=checkbox] :focus {
+    outline: none;
+}
